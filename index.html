@@ -8,28 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="./css/pablo.css">
-    <link rel="stylesheet" href="./css/main.css">    
+    <script src="https://kit.fontawesome.com/d28a6644c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/pablo.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Ejercicio CSS</title>
 </head>
 
 <body>
 
-    <header id="headerMain">
+    <header id="headerMain" class="wdt100p hgt70">
 
-        <a class="aLogo" href="#top">LOGO.COM</a>
+        <div id="divHeader" class="dsp-grd">
+            <div>
+                <a class="txt-dec-none dsp-blck" href="#top">LOGO.COM</a>
+            </div>
+            <div class="jst-slf-right">
+                <button id='btnMenu'><i class="iBtnMenu fa-solid fa-bars"></i></button>
+            </div>
+        </div>
 
-        <nav>
-            <ul class="ulMenu">
-                <li>Servicios</li>
-                <li>Planes</li>
-                <li>Tienda</li>
-                <li>Contacto</li>
-                <li>Más Info</li>
-            </ul>
-        </nav>
+        <div id="divMenu">
+            <nav>
+                <ul class="ulMenu">
+                    <li><a href="#secServicios">Servicios</a></li>
+                    <li><a href="#secPlanes">Planes</a></li>
+                    <li><a href="#secTienda">Tienda</a></li>
+                    <li><a href="#secContacto">Contacto</a></li>
+                    <li><a href="#secInfo">Más Info</a></li>
+                </ul>
+            </nav>
+        </div>
 
     </header>
 
@@ -40,8 +50,14 @@
         <!-- PORTADA ******************************************** -->
         <section id="secPortada">
 
-            <img src="./assets/licensed-image.jpg" alt="Imagen de portada">
-            <h1>La mejor tienda de...</h1>
+            <div class="pos-rel">
+                <img src="./assets/licensed-image.jpg" alt="Imagen de portada">
+                <div class="wdt100p txt-center ">
+                    <h1>La mejor tienda de...</h1>
+                </div>
+            </div>
+
+
 
         </section>
 

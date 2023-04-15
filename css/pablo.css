@@ -6,12 +6,12 @@
 
 /* BACK-GROUND */
 
-.bg-dark {
+.bg-blk {
     background-color: black;
     color: white;
 }
 
-.bg-light {
+.bg-wht {
     background-color: white;
     color: black;
 }
@@ -206,7 +206,11 @@
 
 /* HEIGTH END */
 
-/* ALIGN TEXT */
+/* TEXT */
+
+.txt-dec-none {
+    text-decoration: none;
+}
 
 .txt-center {
     text-align: center;
@@ -220,7 +224,7 @@
     text-align: left;
 }
 
-/* ALIGN TEXT END */
+/* END TEXT */
 
 /* JUSTIFY */
 
@@ -554,6 +558,26 @@
 }
 
 /* DISPLAY END */
+
+/* POSITION  */
+
+.pos-rel {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.pos-fxd {
+    position: fixed;
+}
+
+.pos-stc {
+    position: static;
+}
+
+/* POSITION END */
 
 /* GRID  */
 
