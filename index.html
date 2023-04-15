@@ -5,11 +5,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./css/pablo.css">
+    <link rel="stylesheet" href="./css/main.css">    
     <title>Ejercicio CSS</title>
 </head>
 
 <body>
+
+    <header id="headerMain">
+
+        <a class="aLogo" href="#top">LOGO.COM</a>
+
+        <nav>
+            <ul class="ulMenu">
+                <li>Servicios</li>
+                <li>Planes</li>
+                <li>Tienda</li>
+                <li>Contacto</li>
+                <li>Más Info</li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main id="top">
+
+
+        <!-- PORTADA ******************************************** -->
+        <section id="secPortada">
+
+            <img src="./assets/licensed-image.jpg" alt="Imagen de portada">
+            <h1>La mejor tienda de...</h1>
+
+        </section>
+
+
+        <!-- SERVICIOS ******************************************** -->
+        <section id="secServicios">
+
+            <header>
+
+                <h2>Nuestros Servicios de...</h2>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum velit atque, doloremque vel, mollitia
+                    in sunt, doloribus, similique a ratione dolorem et. Sint, quod blanditiis laudantium, cupiditate
+                    aliquid odit. Nobis?
+                </p>
+
+            </header>
+
+            <main>
+
+                <article>
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img src="./assets/viajes-1.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Uno
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+
+                </article>
+
+                <article>
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img src="./assets/viajes-2.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Dos
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+
+                </article>
+
+                <article>
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img src="./assets/viajes-3.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Tres
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+                </article>
+
+            </main>
+
+        </section>
+
+
+        <!-- PLANES ******************************************** -->
+        <section id="secPlanes">
+
+            <h2>NUESTROS PLANES</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Enc 1</th>
+                        <th>Enc 2</th>
+                        <th>Enc 3</th>
+                        <th>Enc 4</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Cont 1</td>
+                        <td>Cont 2</td>
+                        <td>Cont 3</td>
+                        <td>Cont 4</td>
+                    </tr>
+
+                </tbody>
+                <tr>
+                    <td colspan="4">Fin Tabla</td>
+                </tr>
+
+                <tfoot>
+
+                </tfoot>
+            </table>
+
+        </section>
+
+
+        <!-- TIENDA ******************************************** -->
+        <section id="secTienda">
+
+            <h2>TIENDA</h2>
+
+        </section>
+
+
+        <!-- CONTACTO ******************************************** -->
+        <section id="secContacto">
+
+            <h2>Contacto</h2>
+
+            <p>Dirección: <span>C. de Rodríguez San Pedro, 2</span></p>
+            <p>Teléfono: <span>91 234 567 890</span></p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24295.770545398358!2d-3.705562!3d40.431634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1681549367528!5m2!1ses!2ses"
+                width="600" style="border:0;" allowfullscreen="true" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+
+        <!-- Más Info ******************************************** -->
+        <section id="secInfo">
+
+            <form>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+
+                    <label for="correo">Correo</label>
+                    <input type="email" placeholder="Correo" name="correo" id="correo">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+                </div>
+
+                <div>
+                    <p class="formTitle">Departamento</p>
+
+                    <select name="selDpto" id="selDpto">
+                        <option value="selecciona" selected="true">-- Selecciona un departamento --</option>
+
+                        <option value="comercial">Departamento Comerical</option>
+
+                        <option value="tecnico">Departamento Técnico</option>
+
+                        <option value="formacion">Departamento de Formación</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <p class="formTitle">Turno</p>
+
+                    <input type="radio" name="manana" id="manana">
+                    <label for="manana">Mañana</label>
+
+                    <input type="radio" name="tarde" id="tarde">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="radio" name="noche" id="noche" checked>
+                    <label for="noche">Noche</label>
+                </div>
+
+                <div>
+                    <p class="formTitle">Comentario</p>
+
+                    <textarea name="comentario" id="comentario" placeholder="Comentario"></textarea>
+
+                </div>
+
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <a id="flecha" href="#top">Flecha Arriba</a>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>

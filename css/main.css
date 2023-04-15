@@ -1,5 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+
+    /* VARIABLES */
+    --back-principal-dark: black;
+    --back-principal-light: lightgray;
+    --back-principal-medium: rgb(136, 133, 143);
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
