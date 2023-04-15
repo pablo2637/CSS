@@ -2,12 +2,127 @@
 
     /* VARIABLES */
     --back-principal-dark: black;
-    --back-principal-light: lightgray;
+    --back-principal-light: rgb(241, 241, 241);
     --back-principal-medium: rgb(136, 133, 143);
+
+    --front-principal-light: rgb(240, 240, 240);
+    --front-principal-dark: black;
 
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+html {
     scroll-behavior: smooth;
 }
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+/* HEADER */
+
+#headerMain {
+    position: fixed;
+    background-color: var(--back-principal-dark);
+    z-index: 1000;
+}
+
+#headerMain a {
+    color: var(--front-principal-light);
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+#headerMain>div:first-of-type {
+    grid-template-columns: 1fr 1fr;
+}
+
+#divHeader {
+    height: 100%;
+    padding: 20px 50px;
+}
+
+/* HEADER END */
+
+/* MENU  */
+
+#btnMenu {
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#divMenu ul {
+    list-style: none;
+}
+
+#divMenu li {
+    width: 100%;
+    text-align: center;    
+}
+
+#divMenu a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    width: 100vw;
+    font-size: 1.1em;
+    color: var(--front-principal-dark);
+    transition: background-color 500ms ease-out;
+}
+
+#divMenu a:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
+#divMenu {
+    width: 100%;
+    position: fixed;
+    margin-right: 50px;
+    background-color: var(--back-principal-light);
+    left: 0;
+
+    transform: translate3d(120%, 0px, 0px);
+    transition: transform 500ms ease-in-out;
+    z-index: 1001;
+}
+
+
+#divMenu.mostrarNav {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* MENU END */
+
+/* PORTADA */
+
+#secPortada div:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--front-principal-light);
+}
+
+#secPortada img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#secPortada h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+/* PORTADA END */
