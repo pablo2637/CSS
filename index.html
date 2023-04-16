@@ -5,11 +5,348 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d28a6644c9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/pablo.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Ejercicio CSS</title>
 </head>
 
 <body>
+    <a class="pos-fxd" id="flecha" href="#top"><i class="fa-regular fa-square-caret-up"></i></a>
+
+    <header id="headerMain" class="wdt100vw hgt70">
+
+        <div id="divHeader" class="dsp-grd alg-cnt-center">
+            <div class="dsp-flx alg-itm-center">
+                <a class="txt-dec-none dsp-blck" href="#top">LOGO.COM</a>
+            </div>
+            <div class="jst-slf-right">
+                <button id='btnMenu'><i class="iBtnMenu fa-solid fa-bars"></i></button>
+                <div id="divMenu">
+                    <nav>
+                        <ul class="ulMenu">
+                            <li><a href="#secServicios">Servicios</a></li>
+                            <li><a href="#secPlanes">Planes</a></li>
+                            <li><a href="#secTienda">Tienda</a></li>
+                            <li><a href="#secContacto">Contacto</a></li>
+                            <li><a href="#secInfo">Más Info</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main id="top">
+
+        <!-- PORTADA ******************************************** -->
+        <section id="secPortada">
+
+            <div class="pos-rel">
+                <img src="./assets/licensed-image.jpg" alt="Imagen de portada">
+                <div class="wdt100p txt-center ">
+                    <h1>La mejor tienda de .......</h1>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <!-- SERVICIOS ******************************************** -->
+        <section id="secServicios">
+
+            <header>
+
+                <h2>Nuestros Servicios de ....</h2>
+
+                <p class="txt-center">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum velit atque, doloremque vel, mollitia
+                    in sunt, doloribus, similique a ratione dolorem et. Sint, quod blanditiis laudantium, cupiditate
+                    aliquid odit. Nobis?
+                </p>
+
+            </header>
+
+            <main class="dsp-grd">
+
+                <article class="txt-center pad15 mrg10">
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img class="wdt100p" src="./assets/viajes-1.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Uno
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+
+                </article>
+
+                <article class="txt-center pad15 mrg10">
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img class="wdt100p" src="./assets/viajes-2.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Dos
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+
+                </article>
+
+                <article class="txt-center pad15 mrg10">
+
+                    <div class="card">
+
+                        <div class="cardImg">
+                            <img class="wdt100p" src="./assets/viajes-3.jpg" alt="Imagen de Servicio 1">
+                        </div>
+
+                        <h3 class="cardTitle">
+                            Servicio Tres
+                        </h3>
+                        <p class="cardText">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis saepe, quod nobis
+                            asperiores, cumque illo eum libero doloremque obcaecati. Sint sed, et ipsa. Delectus modi
+                            excepturi nobis. Maiores, quod nihil.
+                        </p>
+
+                        <a class="cardA" href="#top">Leer Más</a>
+
+                    </div>
+
+                </article>
+
+            </main>
+
+        </section>
+
+
+        <!-- PLANES ******************************************** -->
+        <section id="secPlanes" class="dsp-grd">
+
+            <div class="cnt95 alg-slf-center">
+
+                <h2>NUESTROS PLANES</h2>
+
+                <table class="cnt95 txt-center">
+
+                    <thead>
+                        <tr>
+                            <th class="brd2">Plan</th>
+                            <th class="brd2">Descripción</th>
+                            <th class="brd2">Precio</th>
+                            <th class="brd2">Disponibilidad</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Plan 1</td>
+                            <td>Descripción 1</td>
+                            <td>1000€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 2</td>
+                            <td>Descripción 2</td>
+                            <td>1540€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 3</td>
+                            <td>Descripción 3</td>
+                            <td>800€</td>
+                            <td>2 Semanas</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 4</td>
+                            <td>Descripción 4</td>
+                            <td>2200€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 5</td>
+                            <td>Descripción 5</td>
+                            <td>1000€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 6</td>
+                            <td>Descripción 6</td>
+                            <td>1540€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 7</td>
+                            <td>Descripción 7</td>
+                            <td>800€</td>
+                            <td>2 Semanas</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 8</td>
+                            <td>Descripción 8</td>
+                            <td>2200€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td class="brd2" colspan="4">Fin Tabla</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p class="txt-center pad20 ">*Consulta por planes personalizados</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIENDA ******************************************** -->
+        <section id="secTienda" class="dsp-grd">
+
+            <div class="cnt95 alg-slf-center">
+                <h2>TIENDA</h2>
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO ******************************************** -->
+        <section id="secContacto">
+
+            <h2>Contacto</h2>
+
+            <div class="dsp-grd cnt90">
+
+                <div>
+                    <p>Dirección: <span>C. de Rodríguez San Pedro, 2</span></p>
+                    <p>Teléfono: <span>91 234 567 890</span></p>
+                </div>
+
+                <div id="divMapa">
+                    <iframe class="wdt100p"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24295.770545398358!2d-3.705562!3d40.431634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1681549367528!5m2!1ses!2ses"
+                        style="border:0;" allowfullscreen="true" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Más Info ******************************************** -->
+        <section id="secInfo">
+
+            <h2>Más Info</h2>
+
+            <form class="cnt90">
+
+                <div>
+                    <div class="dsp-grd">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="dsp-grd">
+                        <label for="correo">Correo:</label>
+                        <input type="email" placeholder="Correo" name="correo" id="correo">
+                    </div>
+
+                    <div class="dsp-grd">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+                    </div>
+                </div>
+
+                <div>
+                    <p class="formTitle">Departamento</p>
+
+                    <select name="selDpto" id="selDpto" class="pad10 brd-stl-none wdt100p">
+                        <option value="selecciona" selected="true">-- Selecciona un departamento --</option>
+
+                        <option value="comercial">Departamento Comerical</option>
+
+                        <option value="tecnico">Departamento Técnico</option>
+
+                        <option value="formacion">Departamento de Formación</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <p class="formTitle">Turno</p>
+
+                    <input type="radio" name="manana" id="manana">
+                    <label for="manana">Mañana</label>
+
+                    <input type="radio" name="tarde" id="tarde">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="radio" name="noche" id="noche" checked>
+                    <label for="noche">Noche</label>
+                </div>
+
+                <div>
+                    <p class="formTitle">Comentario</p>
+
+                    <textarea name="comentario" id="comentario" placeholder="Comentario"></textarea>
+
+                </div>
+
+                <div>
+                    <button class="wdt100p pad5 brd-stl-none brd-rad10 mrg-btt20" type="submit">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
 
     <script src="./js/main.js"></script>
 </body>

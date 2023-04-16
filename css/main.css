@@ -1,5 +1,566 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+
+    /* VARIABLES */
+    --back-principal-dark: rgb(9, 2, 23);
+    --back-principal-light: rgb(241, 241, 241);
+    --back-principal-medium: rgb(136, 133, 143);
+
+    --front-principal-light: rgb(240, 240, 240);
+    --front-principal-dark: rgb(9, 2, 23);
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    min-width: 360px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+#headerMain {
+    position: fixed;
+    background-color: var(--back-principal-dark);
+    z-index: 1000;
+}
+
+#headerMain a {
+    color: var(--front-principal-light);
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+#headerMain>div:first-of-type {
+    grid-template-columns: 1fr 1fr;
+}
+
+#divHeader {
+    height: 100%;
+    padding: 20px 50px;
+}
+
+/* HEADER END */
+
+/* MENU  */
+
+#btnMenu {
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#divMenu ul {
+    list-style: none;
+}
+
+#divMenu li {
+    width: 100%;
+    text-align: center;
+}
+
+#divMenu a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    width: 100vw;
+    font-size: 1.1em;
+    color: var(--front-principal-dark);
+    transition: background-color 500ms ease-out;
+}
+
+#divMenu a:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
+#divMenu {
+    width: 100%;
+    position: fixed;
+    margin-right: 50px;
+    background-color: var(--back-principal-light);
+    left: 0;
+
+    transform: translate3d(120%, 0px, 0px);
+    transition: transform 500ms ease-in-out;
+}
+
+
+#divMenu.mostrarNav {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* MENU END */
+
+/* FLECHA */
+
+#flecha {
+    display: block;
+    text-decoration: none;
+    color: var(--front-principal-dark);
+    right: 30px;
+    bottom: 30px;
+    font-size: 2em;
+    font-weight: 400;
+    z-index: 1005;
+}
+
+/* FLECHA END */
+
+/* PORTADA */
+
+#secPortada div:last-of-type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--front-principal-light);
+}
+
+#secPortada img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+#secPortada h1 {
+    padding: 5px;
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+/* PORTADA END */
+
+/* SECTIONS */
+
+section {
+    min-height: 100vh;
+    border: 1px solid var(--back-principal-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 300;
+}
+
+/* SECTIONS END */
+
+/* SERVICIOS */
+
+#secServicios main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#secServicios header p,
+.cardText {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+}
+
+#secServicios header p {
+    padding: 30px 20px;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+}
+
+article {
+    border: 1px solid var(--back-principal-light);
+}
+
+.cardTitle {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.cardA {
+    font-weight: 200;
+    font-size: 1.2em;
+    padding: 5px 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--front-principal-dark);
+    border: 1px solid var(--front-principal-light);
+    border-radius: 20px;
+    transition: background-color, color 750ms ease;
+}
+
+.cardA:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
+/* SERVICIOS END */
+
+/* PLANES */
+
+table {
+    margin-top: 50px !important;
+    font-size: 0.8em;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1.2em;
+    padding: 3px;
+    background-color: var(--back-principal-light);
+}
+
+td {
+    padding: 5px;
+}
+
+tfoot tr {
+    padding: 3px;
+    background-color: var(--back-principal-light);
+}
+
+tr:nth-child(even) {
+    color: var(--front-principal-light);
+    background-color: var(--back-principal-medium);
+}
+
+#secPlanes p {
+    font-style: italic;
+}
+
+/* PLANES END */
+
+/* CONTACTO */
+
+#secContacto div:first-of-type {
+    grid-template-rows: 0.15fr 0.85fr;
+}
+
+#divMapa {
+    height: 80vh;
+}
+
+iframe {
+    height: 100%;
+}
+
+#secContacto div div:first-child {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#secContacto p {
+    font-size: 1.1em;
+    letter-spacing: 0.03em;
+}
+
+#secContacto span {
+    font-weight: 200;
+}
+
+/* CONTACTO END */
+
+/* MAS INFO */
+
+form {
+    width: 100%;
+}
+
+form div:first-child label {
+    display: none;
+}
+
+form div:first-child input {
+    /* display: block; */
+    width: 100%;
+    padding: 8px;
+    margin: 20px 0;
+}
+
+#comentario {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+form p,
+label {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: var(--back-principal-medium);
+    color: var(--front-principal-light);
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 500ms ease-out;
+}
+
+button:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
+/* MAS INFO END */
+
+/* RESPONSIVE *************************************** */
+
+/* 430 */
+@media screen and (min-width:430px) {
+
+    #secPortada h1 {
+        font-size: 3.4em;
+    }
+
+}
+
+/* 640 */
+@media screen and (min-width:640px) {
+
+    #secPortada h1 {
+        font-size: 3.65em;
+        text-align: center;
+    }
+
+    td {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    th,
+    tfoot td {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    #secPlanes p {
+        margin-top: 40px;
+        font-size: 1.6em;
+    }
+
+    #secContacto div:first-of-type {
+        width: 95%;
+    }
+
+    form {
+        width: 95% !important;
+    }
+
+}
+
+/* 768 */
+@media screen and (min-width:768px) {
+    #secPortada h1 {
+        font-size: 3.9em;
+    }
+
+    #secServicios main {
+        width: 98%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        padding-top: 70px;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    #secServicios header p {
+        padding: 10px 25px;
+        line-height: 1.4em;
+    }
+
+    .cardText {
+        line-height: 1.3em;
+        letter-spacing: 0.03em;
+    }
+
+    table {
+        max-width: 900px;
+    }
+
+    #secContacto,
+    #secInfo {
+        padding-top: 40px !important;
+    }
+
+    #secContacto div div:first-child {
+        margin-top: 20px;
+    }
+
+}
+
+/* 992 */
+@media screen and (min-width:992px) {
+    #secPortada h1 {
+        font-size: 5.5em;
+    }
+
+    #headerMain {
+        height: 100px;
+    }
+
+    #divHeader {
+        padding: 20px 70px;
+        grid-template-columns: 0.3fr 0.7fr !important;
+    }
+
+    #divMenu {
+        width: 100%;
+        transform: translate3d(0px, 0px, 0px);
+        margin-right: 10px;
+        background-color: var(--back-principal-dark);
+    }
+
+    #divHeader div:last-child {
+        position: relative;
+    }
+
+    #btnMenu {
+        display: none;
+    }
+
+    #divMenu li {
+        display: inline;
+    }
+
+    #divMenu a {
+        text-decoration: none;
+        display: inline;
+        padding: 20px;
+        font-size: 1.2em;
+        color: var(--front-principal-light);
+        transition: color 500ms ease-out;
+    }
+
+    #divMenu a:hover {
+        color: var(--back-principal-medium);
+    }
+
+    #secServicios header,
+    #secServicios main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #secServicios main {
+        margin-top: 40px;
+        width: 80%;
+        column-gap: 25px;
+    }
+
+    section {
+        padding-top: 40px;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    #secServicios header p {
+        padding: 5px 60px;
+        line-height: 1.4em;
+    }
+
+    article {
+        padding: 20px !important;
+    }
+
+    .cardTitle {
+        padding: 15px;
+    }
+
+    #secServicios header,
+    #secServicios main {
+        max-width: 1080px;
+    }
+
+    #secContacto div:first-of-type {
+        max-width: 1080px;
+        width: 80%;
+        margin-top: 70px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #secContacto div div:first-of-type {
+        margin-top: 0;
+    }
+
+    form {
+        width: 80% !important;
+        max-width: 1080px;
+    }
+
+    form div div {
+        grid-template-columns: 0.1fr 0.9fr;
+    }
+
+    form div:first-child label {
+        display: inline !important;
+    }
+
+    textarea {
+        height: 120px !important;
+        margin-bottom: 70px !important;
+    }
+
+    button {
+        margin-bottom: 70px !important;
+    }
+
+    form p {
+        margin-top: 35px !important;
+        margin-bottom: 30px !important;
+    }
+
+}
+
+/* 1200 */
+@media screen and (min-width:1200px) {
+
+    #secPortada h1 {
+        font-size: 6.5em;
+    }
+
+    h2 {
+        font-size: 4.2em;
+    }
+
+    section {
+        padding-top: 60px;
+    }
+
+    #secServicios header p {
+        padding: 5px 100px;
+    }
+
+    #secContacto div:first-of-type {
+        grid-template-columns: 0.40fr 0.60fr !important;
+        column-gap: 10px;
+    }
+
+    #secContacto div div {
+        width: 100% !important;
+    }
+
+
 }
