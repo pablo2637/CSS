@@ -96,6 +96,21 @@ html {
 
 /* MENU END */
 
+/* FLECHA */
+
+#flecha {
+    display: block;
+    text-decoration: none;
+    color: var(--front-principal-dark);
+    right: 30px;
+    bottom: 30px;
+    font-size: 2em;
+    font-weight: 400;
+    z-index: 1005;
+}
+
+/* FLECHA END */
+
 /* PORTADA */
 
 #secPortada div:last-of-type {
@@ -254,7 +269,45 @@ iframe {
 
 /* CONTACTO END */
 
+/* MAS INFO */
 
+form {
+    width: 100%;
+}
+
+form div:first-child label {
+    display: none;
+}
+
+form div:first-child input {
+    /* display: block; */
+    width: 100%;
+    padding: 8px;
+    margin: 20px 0;
+}
+
+#comentario {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+form p,
+label {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: var(--back-principal-medium);
+    color: var(--front-principal-light);
+}
+
+/* MAS INFO END */
 
 /* RESPONSIVE *************************************** */
 
@@ -295,6 +348,10 @@ iframe {
         width: 95%;
     }
 
+    form {
+        width: 95% !important;
+    }
+
 }
 
 /* 768 */
@@ -330,7 +387,8 @@ iframe {
         max-width: 900px;
     }
 
-    #secContacto {
+    #secContacto,
+    #secInfo {
         padding-top: 40px !important;
     }
 
@@ -423,9 +481,9 @@ iframe {
     #secServicios header,
     #secServicios main {
         max-width: 1080px;
-    }   
+    }
 
-    #secContacto div:first-of-type {        
+    #secContacto div:first-of-type {
         max-width: 1080px;
         width: 80%;
         margin-top: 70px;
@@ -433,9 +491,35 @@ iframe {
         grid-template-columns: 1fr 1fr;
     }
 
+    #secContacto div div:first-of-type {
+        margin-top: 0;
+    }
 
-    #secContacto div div:first-child {
-        margin-top: 0;        
+    form {
+        width: 80% !important;
+        max-width: 1080px;
+    }
+
+    form div div {
+        grid-template-columns: 0.1fr 0.9fr;
+    }
+
+    form div:first-child label {
+        display: inline !important;
+    }
+
+    textarea {
+        height: 120px !important;
+        margin-bottom: 70px !important;
+    }
+
+    button {
+        margin-bottom: 70px !important;
+    }
+
+    form p {
+        margin-top: 35px !important;
+        margin-bottom: 30px !important;
     }
 
 }
@@ -458,8 +542,8 @@ iframe {
     #secServicios header p {
         padding: 5px 100px;
     }
-    
-    #secContacto div:first-of-type {     
+
+    #secContacto div:first-of-type {
         grid-template-columns: 0.40fr 0.60fr !important;
         column-gap: 10px;
     }

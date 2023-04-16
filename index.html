@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <a class="pos-fxd" id="flecha" href="#top"><i class="fa-regular fa-square-caret-up"></i></a>
 
     <header id="headerMain" class="wdt100vw hgt70">
 
@@ -40,13 +41,10 @@
             </div>
         </div>
 
-
-
     </header>
 
 
     <main id="top">
-
 
         <!-- PORTADA ******************************************** -->
         <section id="secPortada">
@@ -278,33 +276,38 @@
                 </div>
 
             </div>
-            
+
         </section>
 
 
         <!-- Más Info ******************************************** -->
         <section id="secInfo">
 
-            
             <h2>Más Info</h2>
 
-            <form>
+            <form class="cnt90">
 
                 <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+                    <div class="dsp-grd">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
 
-                    <label for="correo">Correo</label>
-                    <input type="email" placeholder="Correo" name="correo" id="correo">
+                    <div class="dsp-grd">
+                        <label for="correo">Correo:</label>
+                        <input type="email" placeholder="Correo" name="correo" id="correo">
+                    </div>
 
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+                    <div class="dsp-grd">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+                    </div>
                 </div>
 
                 <div>
                     <p class="formTitle">Departamento</p>
 
-                    <select name="selDpto" id="selDpto">
+                    <select name="selDpto" id="selDpto" class="pad10 brd-stl-none wdt100p">
                         <option value="selecciona" selected="true">-- Selecciona un departamento --</option>
 
                         <option value="comercial">Departamento Comerical</option>
@@ -337,18 +340,13 @@
                 </div>
 
                 <div>
-                    <button type="submit">Enviar</button>
+                    <button class="wdt100p pad5 brd-stl-none brd-rad10 mrg-btt20" type="submit">Enviar</button>
                 </div>
             </form>
 
         </section>
 
     </main>
-
-
-    <footer>
-        <a id="flecha" href="#top">Flecha Arriba</a>
-    </footer>
 
     <script src="./js/main.js"></script>
 </body>

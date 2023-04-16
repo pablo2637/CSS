@@ -500,6 +500,10 @@
     border-top: 2px solid;
 }
 
+.brd-stl-none {
+    border-style: none;
+}
+
 .brd-stl-dot {
     border-style: dotted;
 }
@@ -583,6 +587,10 @@
 
 .pos-stc {
     position: static;
+}
+
+.pos-stk {
+    position: sticky;
 }
 
 /* POSITION END */
