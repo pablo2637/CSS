@@ -307,6 +307,16 @@ select {
     color: var(--front-principal-light);
 }
 
+button {
+    cursor: pointer;
+    transition: background-color 500ms ease-out;
+}
+
+button:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
 /* MAS INFO END */
 
 /* RESPONSIVE *************************************** */
