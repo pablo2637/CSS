@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/d28a6644c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/pablo.css">
@@ -18,28 +18,29 @@
 
 <body>
 
-    <header id="headerMain" class="wdt100p hgt70">
+    <header id="headerMain" class="wdt100vw hgt70">
 
-        <div id="divHeader" class="dsp-grd">
-            <div>
+        <div id="divHeader" class="dsp-grd alg-cnt-center">
+            <div class="dsp-flx alg-itm-center">
                 <a class="txt-dec-none dsp-blck" href="#top">LOGO.COM</a>
             </div>
             <div class="jst-slf-right">
                 <button id='btnMenu'><i class="iBtnMenu fa-solid fa-bars"></i></button>
+                <div id="divMenu">
+                    <nav>
+                        <ul class="ulMenu">
+                            <li><a href="#secServicios">Servicios</a></li>
+                            <li><a href="#secPlanes">Planes</a></li>
+                            <li><a href="#secTienda">Tienda</a></li>
+                            <li><a href="#secContacto">Contacto</a></li>
+                            <li><a href="#secInfo">Más Info</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
-        <div id="divMenu">
-            <nav>
-                <ul class="ulMenu">
-                    <li><a href="#secServicios">Servicios</a></li>
-                    <li><a href="#secPlanes">Planes</a></li>
-                    <li><a href="#secTienda">Tienda</a></li>
-                    <li><a href="#secContacto">Contacto</a></li>
-                    <li><a href="#secInfo">Más Info</a></li>
-                </ul>
-            </nav>
-        </div>
+
 
     </header>
 
@@ -53,7 +54,7 @@
             <div class="pos-rel">
                 <img src="./assets/licensed-image.jpg" alt="Imagen de portada">
                 <div class="wdt100p txt-center ">
-                    <h1>La mejor tienda de...</h1>
+                    <h1>La mejor tienda de .......</h1>
                 </div>
             </div>
 
@@ -67,9 +68,9 @@
 
             <header>
 
-                <h2>Nuestros Servicios de...</h2>
+                <h2>Nuestros Servicios de ....</h2>
 
-                <p>
+                <p class="txt-center">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum velit atque, doloremque vel, mollitia
                     in sunt, doloribus, similique a ratione dolorem et. Sint, quod blanditiis laudantium, cupiditate
                     aliquid odit. Nobis?
@@ -77,14 +78,14 @@
 
             </header>
 
-            <main>
+            <main class="dsp-grd">
 
-                <article>
+                <article class="txt-center pad15 mrg10">
 
                     <div class="card">
 
                         <div class="cardImg">
-                            <img src="./assets/viajes-1.jpg" alt="Imagen de Servicio 1">
+                            <img class="wdt100p" src="./assets/viajes-1.jpg" alt="Imagen de Servicio 1">
                         </div>
 
                         <h3 class="cardTitle">
@@ -103,12 +104,12 @@
 
                 </article>
 
-                <article>
+                <article class="txt-center pad15 mrg10">
 
                     <div class="card">
 
                         <div class="cardImg">
-                            <img src="./assets/viajes-2.jpg" alt="Imagen de Servicio 1">
+                            <img class="wdt100p" src="./assets/viajes-2.jpg" alt="Imagen de Servicio 1">
                         </div>
 
                         <h3 class="cardTitle">
@@ -127,12 +128,12 @@
 
                 </article>
 
-                <article>
+                <article class="txt-center pad15 mrg10">
 
                     <div class="card">
 
                         <div class="cardImg">
-                            <img src="./assets/viajes-3.jpg" alt="Imagen de Servicio 1">
+                            <img class="wdt100p" src="./assets/viajes-3.jpg" alt="Imagen de Servicio 1">
                         </div>
 
                         <h3 class="cardTitle">
@@ -156,46 +157,102 @@
 
 
         <!-- PLANES ******************************************** -->
-        <section id="secPlanes">
+        <section id="secPlanes" class="dsp-grd">
 
-            <h2>NUESTROS PLANES</h2>
+            <div class="cnt95 alg-slf-center">
 
-            <table>
+                <h2>NUESTROS PLANES</h2>
 
-                <thead>
-                    <tr>
-                        <th>Enc 1</th>
-                        <th>Enc 2</th>
-                        <th>Enc 3</th>
-                        <th>Enc 4</th>
-                    </tr>
-                </thead>
+                <table class="cnt95 txt-center">
 
-                <tbody>
-                    <tr>
-                        <td>Cont 1</td>
-                        <td>Cont 2</td>
-                        <td>Cont 3</td>
-                        <td>Cont 4</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th class="brd2">Plan</th>
+                            <th class="brd2">Descripción</th>
+                            <th class="brd2">Precio</th>
+                            <th class="brd2">Disponibilidad</th>
+                        </tr>
+                    </thead>
 
-                </tbody>
-                <tr>
-                    <td colspan="4">Fin Tabla</td>
-                </tr>
+                    <tbody>
+                        <tr>
+                            <td>Plan 1</td>
+                            <td>Descripción 1</td>
+                            <td>1000€</td>
+                            <td>Inmediata</td>
+                        </tr>
 
-                <tfoot>
+                        <tr>
+                            <td>Plan 2</td>
+                            <td>Descripción 2</td>
+                            <td>1540€</td>
+                            <td>Inmediata</td>
+                        </tr>
 
-                </tfoot>
-            </table>
+                        <tr>
+                            <td>Plan 3</td>
+                            <td>Descripción 3</td>
+                            <td>800€</td>
+                            <td>2 Semanas</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 4</td>
+                            <td>Descripción 4</td>
+                            <td>2200€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 5</td>
+                            <td>Descripción 5</td>
+                            <td>1000€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 6</td>
+                            <td>Descripción 6</td>
+                            <td>1540€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 7</td>
+                            <td>Descripción 7</td>
+                            <td>800€</td>
+                            <td>2 Semanas</td>
+                        </tr>
+
+                        <tr>
+                            <td>Plan 8</td>
+                            <td>Descripción 8</td>
+                            <td>2200€</td>
+                            <td>Inmediata</td>
+                        </tr>
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td class="brd2" colspan="4">Fin Tabla</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <p class="txt-center pad20 ">*Consulta por planes personalizados</p>
+
+            </div>
 
         </section>
 
 
         <!-- TIENDA ******************************************** -->
-        <section id="secTienda">
+        <section id="secTienda" class="dsp-grd">
 
-            <h2>TIENDA</h2>
+            <div class="cnt95 alg-slf-center">
+                <h2>TIENDA</h2>
+            </div>
 
         </section>
 
@@ -205,14 +262,23 @@
 
             <h2>Contacto</h2>
 
-            <p>Dirección: <span>C. de Rodríguez San Pedro, 2</span></p>
-            <p>Teléfono: <span>91 234 567 890</span></p>
+            <div class="dsp-grd cnt90">
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24295.770545398358!2d-3.705562!3d40.431634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1681549367528!5m2!1ses!2ses"
-                width="600" style="border:0;" allowfullscreen="true" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <p>Dirección: <span>C. de Rodríguez San Pedro, 2</span></p>
+                    <p>Teléfono: <span>91 234 567 890</span></p>
+                </div>
 
+                <div id="divMapa">
+                    <iframe class="wdt100p"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24295.770545398358!2d-3.705562!3d40.431634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1681549367528!5m2!1ses!2ses"
+                        style="border:0;" allowfullscreen="true" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+            
         </section>
 
 
