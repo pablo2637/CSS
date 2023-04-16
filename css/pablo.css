@@ -44,8 +44,8 @@
     width: 100%;
 }
 
-.wdt100vh {
-    width: 100vh;
+.wdt100vw {
+    width: 100vw;
 }
 
 .wdt25 {
@@ -456,15 +456,15 @@
 
 /* BORDER */
 
-.brd-1 {
+.brd1 {
     border: 1px solid;
 }
 
-.brd-2 {
+.brd2 {
     border: 2px solid;
 }
 
-.brd-3 {
+.brd3 {
     border: 3px solid;
 }
 
@@ -490,6 +490,14 @@
 
 .brd-btt2 {
     border-bottom: 2px solid;
+}
+
+.brd-top1 {
+    border-top: 1px solid;
+}
+
+.brd-top2 {
+    border-top: 2px solid;
 }
 
 .brd-stl-dot {
@@ -701,19 +709,3 @@
 
 /* ************************************************** */
 
-/* RESPONSIVE *************************************** */
-
-/* 430 */
-@media screen and (min-width:430px) {}
-
-/* 640 */
-@media screen and (min-width:640px) {}
-
-/* 768 */
-@media screen and (min-width:768px) {}
-
-/* 992 */
-@media screen and (min-width:992px) {}
-
-/* 1200 */
-@media screen and (min-width:1200px) {}

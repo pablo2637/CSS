@@ -1,28 +1,22 @@
 :root {
 
     /* VARIABLES */
-    --back-principal-dark: black;
+    --back-principal-dark: rgb(9, 2, 23);
     --back-principal-light: rgb(241, 241, 241);
     --back-principal-medium: rgb(136, 133, 143);
 
     --front-principal-light: rgb(240, 240, 240);
-    --front-principal-dark: black;
+    --front-principal-dark: rgb(9, 2, 23);
 
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;    
+    font-family: 'Lato', sans-serif;
+    min-width: 360px;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-section {
-    height: 100vh;
-    border: 1px solid black;
-    border-bottom: 2px solid black;
-
 }
 
 /* HEADER */
@@ -36,7 +30,7 @@ section {
 #headerMain a {
     color: var(--front-principal-light);
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 #headerMain>div:first-of-type {
@@ -66,7 +60,7 @@ section {
 
 #divMenu li {
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
 #divMenu a {
@@ -93,7 +87,6 @@ section {
 
     transform: translate3d(120%, 0px, 0px);
     transition: transform 500ms ease-in-out;
-    z-index: 1001;
 }
 
 
@@ -117,12 +110,313 @@ section {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
 }
 
 #secPortada h1 {
-    font-size: 4em;
+    padding: 5px;
+    font-size: 3.2em;
     font-weight: 600;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
 /* PORTADA END */
+
+/* SECTIONS */
+
+section {
+    min-height: 100vh;
+    border: 1px solid var(--back-principal-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 300;
+}
+
+/* SECTIONS END */
+
+/* SERVICIOS */
+
+#secServicios main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#secServicios header p,
+.cardText {
+    font-size: 1.1em;
+    font-weight: 300;
+    padding: 5px;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+}
+
+#secServicios header p {
+    padding: 30px 20px;
+    line-height: 1.4em;
+    letter-spacing: 0.03em;
+}
+
+article {
+    border: 1px solid var(--back-principal-light);
+}
+
+.cardTitle {
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.cardA {
+    font-weight: 200;
+    font-size: 1.2em;
+    padding: 5px 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--front-principal-dark);
+    border: 1px solid var(--front-principal-light);
+    border-radius: 20px;
+    transition: background-color, color 750ms ease;
+}
+
+.cardA:hover {
+    background-color: var(--back-principal-dark);
+    color: var(--front-principal-light)
+}
+
+/* SERVICIOS END */
+
+/* PLANES */
+
+table {
+    margin-top: 50px !important;
+    font-size: 0.8em;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 1.2em;
+    padding: 3px;
+    background-color: var(--back-principal-light);
+}
+
+td {
+    padding: 5px;
+}
+
+tfoot tr {
+    padding: 3px;
+    background-color: var(--back-principal-light);
+}
+
+tr:nth-child(even) {
+    color: var(--front-principal-light);
+    background-color: var(--back-principal-medium);
+}
+
+#secPlanes p {
+    font-style: italic;
+}
+
+/* PLANES END */
+
+/* CONTACTO */
+
+#secContacto div:first-of-type {
+    grid-template-rows: 0.2fr 0.8fr;
+}
+
+#divMapa {
+    height: 80vh;
+}
+
+iframe {
+    height: 100%;
+}
+
+/* CONTACTO END */
+
+
+
+/* RESPONSIVE *************************************** */
+
+/* 430 */
+@media screen and (min-width:430px) {
+
+    #secPortada h1 {
+        font-size: 3.4em;
+    }
+
+}
+
+/* 640 */
+@media screen and (min-width:640px) {
+
+    #secPortada h1 {
+        font-size: 3.65em;
+        text-align: center;
+    }
+
+    td {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+
+    th,
+    tfoot td {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    #secPlanes p {
+        margin-top: 40px;
+        font-size: 1.6em;
+    }
+
+}
+
+/* 768 */
+@media screen and (min-width:768px) {
+    #secPortada h1 {
+        font-size: 3.9em;
+    }
+
+    #secServicios main {
+        width: 98%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        padding-top: 70px;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    #secServicios header p {
+        padding: 10px 25px;
+        line-height: 1.4em;
+    }
+
+    .cardText {
+        line-height: 1.3em;
+        letter-spacing: 0.03em;
+    }
+
+    table {
+        max-width: 900px;
+    }
+}
+
+/* 992 */
+@media screen and (min-width:992px) {
+    #secPortada h1 {
+        font-size: 5.5em;
+    }
+
+    #headerMain {
+        height: 100px;
+    }
+
+    #divHeader {
+        padding: 20px 70px;
+        grid-template-columns: 0.3fr 0.7fr !important;
+    }
+
+    #divMenu {
+        width: 100%;
+        transform: translate3d(0px, 0px, 0px);
+        margin-right: 10px;
+        background-color: var(--back-principal-dark);
+    }
+
+    #divHeader div:last-child {
+        position: relative;
+    }
+
+    #btnMenu {
+        display: none;
+    }
+
+    #divMenu li {
+        display: inline;
+    }
+
+    #divMenu a {
+        text-decoration: none;
+        display: inline;
+        padding: 20px;
+        font-size: 1.2em;
+        color: var(--front-principal-light);
+        transition: color 500ms ease-out;
+    }
+
+    #divMenu a:hover {
+        color: var(--back-principal-medium);
+    }
+
+    #secServicios header,
+    #secServicios main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #secServicios main {
+        margin-top: 40px;
+        width: 80%;
+        column-gap: 25px;
+    }
+
+    section {
+        padding-top: 40px;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    #secServicios header p {
+        padding: 5px 60px;
+        line-height: 1.4em;
+    }
+
+    article {
+        padding: 20px !important;
+    }
+
+    .cardTitle {
+        padding: 15px;
+    }
+
+    #secServicios header,
+    #secServicios main {
+        max-width: 1080px;
+    }
+
+}
+
+/* 1200 */
+@media screen and (min-width:1200px) {
+
+    #secPortada h1 {
+        font-size: 6.5em;
+    }
+
+    h2 {
+        font-size: 4.2em;
+    }
+
+    section {
+        padding-top: 60px;
+    }
+
+
+    #secServicios header p {
+        padding: 5px 100px;
+    }
+}
